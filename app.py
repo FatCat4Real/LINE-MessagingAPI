@@ -85,7 +85,7 @@ def handle_text_message(event):
 
     elif text == 'image':
         url = 'https://github.com/FatCat4Real/LINE-MessagingAPI/blob/main/chicken.png?raw=true'
-        app.logger.info("url=" + url)
+#         app.logger.info("url=" + url)
         line_bot_api.reply_message(
             event.reply_token,
             ImageSendMessage(url, url)
