@@ -191,7 +191,7 @@ def handle_text_message(event):
                 event.reply_token,
                 TextSendMessage(text="Bot can't leave from 1:1 chat"))
     elif text == 'image':
-        url = request.url_root + '/static/logo.png'
+        url = 'https://github.com/FatCat4Real/LINE-MessagingAPI/blob/main/chicken.png?raw=true'
         app.logger.info("url=" + url)
         line_bot_api.reply_message(
             event.reply_token,
