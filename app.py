@@ -85,7 +85,7 @@ def handle_text_message(event):
 
     elif text == 'image':
         # urls = ['https://github.com/FatCat4Real/LINE-MessagingAPI/blob/main/chicken.png?raw=true', 'https://github.com/FatCat4Real/LINE-MessagingAPI/blob/main/duck.png?raw=true']
-        urls = ['https://drive.google.com/file/d/1ThnLWH1jb01YdwlYwMpjKcStSE78VjK1/view', 'https://drive.google.com/file/d/1ThnLWH1jb01YdwlYwMpjKcStSE78VjK1/view']
+        urls = ['https://drive.google.com/uc?id=1ThnLWH1jb01YdwlYwMpjKcStSE78VjK1', 'https://drive.google.com/uc?id=1ThnLWH1jb01YdwlYwMpjKcStSE78VjK1']
 #         app.logger.info("url=" + url)
         line_bot_api.reply_message(
             event.reply_token,[
