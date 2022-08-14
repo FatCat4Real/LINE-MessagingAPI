@@ -84,12 +84,13 @@ def handle_text_message(event):
                 TextSendMessage(text="Bot can't use profile API without user ID"))
 
     elif text == 'image':
-        url = 'https://github.com/FatCat4Real/LINE-MessagingAPI/blob/main/chicken.png?raw=true'
+        urls = ['https://github.com/FatCat4Real/LINE-MessagingAPI/blob/main/chicken.png?raw=true', 'https://github.com/FatCat4Real/LINE-MessagingAPI/blob/main/duck.png?raw=true']
 #         app.logger.info("url=" + url)
-        line_bot_api.reply_message(
-            event.reply_token,
-            ImageSendMessage(url, url)
-        )
+        for url in urls:
+            line_bot_api.reply_message(
+                event.reply_token,
+                ImageSendMessage(url, url)
+            )
     else:
         line_bot_api.reply_message(
             event.reply_token, TextSendMessage(text=event.message.text))
